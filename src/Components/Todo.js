@@ -45,7 +45,7 @@
 					<DatePicker 
 					popperClassName='date-picker-popper'
 					wrapperClassName='date-picker'
-					popperPlacement = 'left-end'
+					popperPlacement = 'bottom'
 					showPopperArrow = {false}
 					customInput={<AiOutlineCalendar /> }
 					closeOnScroll
@@ -157,7 +157,7 @@
 			detailsRef.current.value = null
 		}
 
-		// Returns a component containing a collapsable menu when 
+		// Returns a component containing a collapsible menu when 
 		// the boolean opened is true
 		function TodoWindow() {
 			return (

@@ -22,6 +22,7 @@ const options = [
 const colourStyles = {
 	control: (styles, {isFocused}) => (
 		{ ...styles, 
+			zIndex: 0,
 			backgroundColor: '#E4F3FF',
 			borderColor: '#bde0fe',
 			boxShadow: isFocused ? null : null,
@@ -163,7 +164,7 @@ const colourStyles = {
 				<div className='header'>
 					<DropdownButton />
 					<input 
-						maxLength={20}
+						maxLength={45}
 						placeholder='Todo...'
 						ref = {todoNameRef}
 						type='text'

@@ -46,6 +46,10 @@ body {
   grid-area: textfield
 }
 
+.textfield:focus {
+  outline:#BDE0FE;
+}
+
 .todo-button {
   border-radius: 5px;
   background-color: #4285F4;
@@ -105,7 +109,7 @@ input[type="checkbox"] {
 
 .todo-text {
   padding-left: 4px;
-  margin: 12px 0 3px 0px;
+  margin: 12px 20px 3px 0px;
   align-self: center;
   align-items: center;
   grid-area: todo;
@@ -113,7 +117,8 @@ input[type="checkbox"] {
 }
 
 .date-format {
-  padding: 0 0 8px 3px;
+  margin-right: 20px;
+  padding: 0 0 8px 4px;
   text-align: left;
   grid-area: date;
   font-size: 13px;
@@ -224,7 +229,7 @@ input[type="checkbox"] {
 
 .react-select {
   position: relative;
-  z-index: 3;
+  z-index: 10;
   grid-area: tags;
   margin: 0 1vw 0 1vw;
 }
